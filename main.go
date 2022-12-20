@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Println("Hello, Black Hat Gophers!")
+	go f()
+	time.Sleep(1 * time.Second)
+	fmt.Println("main function")
+}
+
+func f() {
+	fmt.Println("f function")
 }

@@ -13,3 +13,9 @@ func main() {
 func strlen(s string, c chan int) {
 	c <- len(s)
 }
+
+type MyError string
+
+func (e MyError) Error() string {
+	return string(e)
+}

@@ -11,7 +11,7 @@ type Foo struct {
 }
 
 func main() {
-	f := Foo{"Joe Junior", "Hello Shabado"}
+	f := Foo{"Joe Junior", "Hello Shabado test"}
 	b, _ := json.Marshal(f)
 	fmt.Println(string(b))
 	json.Unmarshal(b, &f)
